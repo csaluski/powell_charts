@@ -1,0 +1,18 @@
+[
+  {
+    "source_name": "pool_elevation",
+    "source_url": "https://www.usbr.gov/uc/water/hydrodata/reservoir_data/919/csv/49.csv",
+    "source_type": "csv",
+    "source_cols": [
+      {
+        "name": "datetime",
+        "type": "date",
+        "format": "%Y-%m-%d"
+      },
+      {
+        "name": "pool elevation",
+        "type": "number"
+      }
+    ]
+  }
+]

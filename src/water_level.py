@@ -4,7 +4,7 @@ import pandas as pd
 import json
 import requests
 
-sources = json.load(open('../sources.json'))
+sources = json.load(open('sources.json'))
 r = requests.get(sources[0]['source_url'])
 
 from io import StringIO
