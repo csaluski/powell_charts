@@ -15,3 +15,11 @@ fig = px.line(tab, x="datetime", y="pool elevation", title='Lake Powell Pool Ele
 # fig.show()
 
 fig.write_html("water_level.html")
+
+tab['year'] = tab['datetime'].dt.year
+tab['day_of_year'] = tab['datetime'].dt.dayofyear
+
+by_year_fig = px.line(tab, x="day_of_year", y="pool elevation", color="year", title='Lake Powell Pool Elevation by Year')
+# by_year_fig.show()
+
+by_year_fig.write_html("water_level_by_year.html")
